@@ -2,8 +2,57 @@
 
 ## Overview
 
-This Weather App is designed to provide users with real-time weather updates and forecasts for multiple locations globally. It leverages React Native for cross-platform mobile development and the OpenWeather API for fetching weather data.
+This Weather App is designed to provide users with real-time weather updates and forecasts for multiple locations globally. It leverages React Native for cross-platform mobile development and the OpenWeather API for fetching weather data. The app also uses Unsplash API for fetching background images for the locations and stores the data in AsyncStorage.
+If you want to run the app on your phone, you can use Expo Go app.
 
+## Setup and Installation
+
+### Prerequisites
+
+- Node.js
+- npm or Yarn
+- Expo CLI
+
+### Installation Steps
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/weather-app.git
+   cd weather-app
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Setup API Key:
+   ```bash
+   copy .env.example to .env
+   go to https://openweathermap.org/ and create account and get your API key.
+   go to https://unsplash.com/developers and create account and get your API key under developer section.
+   add your API keys to .env file.
+   ```
+
+3. Start the development server:
+   ```bash
+   expo start
+   ```
+
+4. Run the app:
+   ```bash
+   expo run:ios or expo run:android
+   ```
+
+5. Add locations to your dashboard:
+   ```bash
+   got to Settings screen and add locations to your dashboard.
+   search for the city and add to your dashboard.
+   ```
+
+## Usage
+
+Navigate through the app using the bottom tab navigator. Search for cities using the search bar at the top of the Home screen. Select any city card to view detailed forecasts.
 ## Project Structure
 
 Here's a breakdown of the key directories and files in this project:
@@ -74,36 +123,6 @@ Configuration file for the Expo app, including name, icons, permissions, etc.
 - **Expo**
 - **OpenWeather API**
 - **React Navigation**
-
-## Setup and Installation
-
-### Prerequisites
-
-- Node.js
-- npm or Yarn
-- Expo CLI
-
-### Installation Steps
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/weather-app.git
-   cd weather-app
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Start the development server:
-   ```bash
-   expo start
-   ```
-
-## Usage
-
-Navigate through the app using the bottom tab navigator. Search for cities using the search bar at the top of the Home screen. Select any city card to view detailed forecasts.
 
 ## Contributing
 
